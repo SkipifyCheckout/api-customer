@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  description: |
+    Customer API used to manage the consumer wallet context.
+  version: "1.0.0"
+  title: Customer API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+    
+tags:
+  - name: Customer
+    description: |
+      Core customer related API service methods.
+  - name: Customer Addresses
+    description: |
+      Managerment of a customer's addresses.
+  - name: Customer Payment Methods
+    description: |
+      Management of a customer's payment methods
+
+paths:
+  /customers:
+    get:
+      tags:
+        - Customer
+      summary: Temp Placeholder
+      description: "No public APIs exposed yet, so this endpoint is strictly here as a temp placeholder."
+      responses:
+        '200':
+          description: Success
+
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/GoCartPay/gocart-customer-api/1.0.0
+  - description: GoCart Staging Environment
+    url: https://api-staging.gocartpay.com
+  - description: GoCart Production Environment
+    url: https://api.gocartpay.com/
